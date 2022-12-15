@@ -1,1 +1,2 @@
-# mongo_backup_restore
+- backup with mongodump
+- restore with mongorestore
