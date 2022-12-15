@@ -7,4 +7,4 @@ BACKUP_DES="/DB"
 ASMIN_USER="root"
 PASSWORD="changeme"
 
-docker exec -t ${CONTAINER_ID} mongorestore --port 27017 -u ${ASMIN_USER} -p ${PASSWORD} --db ${DATABASE_NAME} ${BACKUP_DES}
+docker exec -t ${CONTAINER_ID} mongorestore --port 27017 -u ${ASMIN_USER} -p ${PASSWORD} --authenticationDatabase admin --db ${DATABASE_NAME} ${BACKUP_DES}
